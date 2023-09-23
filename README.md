@@ -154,6 +154,6 @@ I would like to thank all code reviewers for making this project better.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/lucy-sees/React-Bookstore-App/blob/1ca9d84be99441c7e436c7e881f4b46f92ba5cdb/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
