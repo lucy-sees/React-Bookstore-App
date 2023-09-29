@@ -9,10 +9,6 @@ const Home = () => {
   const dispatch = useDispatch();
   const bookNames = useSelector((state) => state.books);
 
-  // const handleAddBook = (book) => {
-  //   dispatch(addBook(book));
-  // };
-
   const handleRemoveBook = (bookId) => {
     dispatch(removeBook(bookId));
   };
