@@ -15,7 +15,6 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -51,13 +50,6 @@ The Bookstore is a website that allows you to:
 - **Display a list of books**
 - **Add a book**
 - **Remove a selected book**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- Coming Soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
