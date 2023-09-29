@@ -1,21 +1,17 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-export const booksSlice = createSlice({
+const booksSlice = createSlice({
   name: 'books',
-  initialState: {
-    books: [],
-  },
+  initialState: [
+    { id: 1, title: '12 Rules For Life', author: 'Jordan B. Peterson' },
+    { id: 2, title: 'The Power of Habit', author: 'Charles Duhigg' },
+    { id: 3, title: 'How to Win Friends and Influence People', author: 'Dale Carnegie' },
+  ],
   reducers: {
     addBook: (state, action) => {
-      const newBook = action.payload;
-      state.books.push(newBook);
+      state.push(action.payload);
     },
-
-    removeBook: (state, action) => {
-      const newState = { ...state };
-      const bookIdToRemove = action.payload;
-      newState.books = state.books.filter((book) => book.id !== bookIdToRemove);
-    },
+    removeBook: (state, action) => state.filter((book) => book.id !== action.payload),
   },
 });
 
