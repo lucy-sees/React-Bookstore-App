@@ -57,7 +57,7 @@ The Bookstore is a website that allows you to:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Coming soon...]()
+- Coming Soon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
