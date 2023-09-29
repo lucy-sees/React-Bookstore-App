@@ -1,26 +1,30 @@
-import React, { useState } from 'react';
 import '../styles/Home.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { MdDeleteOutline } from 'react-icons/md';
 import Book from './Book';
 import Form from './Form';
-
-const booksArr = [
-  { id: 1, title: '12 Rules For Life', author: 'Jordan B. Peterson' },
-  { id: 2, title: 'The Power of Habit', author: 'Charles Duhigg' },
-  { id: 3, title: 'How to Win Friends and Influence People', author: 'Dale Carnigie' },
-];
+import { removeBook } from '../redux/books/bookSlice';
 
 const Home = () => {
-  const [state] = useState(booksArr);
+  const dispatch = useDispatch();
+  const bookNames = useSelector((state) => state.books);
+
+  const handleRemoveBook = (bookId) => {
+    dispatch(removeBook(bookId));
+  };
+
   return (
     <>
       <section className="book-list">
         <Form />
-        {state.map((booksArr) => (
-          <Book
-            key={booksArr.id}
-            title={booksArr.title}
-            author={booksArr.author}
-          />
+        {bookNames.map((book) => (
+          <article className="one-book" key={book.id}>
+            <Book title={book.title} author={book.author} />
+
+            <button type="button" className="not-visible" onClick={() => handleRemoveBook(book.id)}>
+              <MdDeleteOutline className="book-delete-btn" />
+            </button>
+          </article>
         ))}
       </section>
     </>
