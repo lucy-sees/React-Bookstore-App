@@ -9,17 +9,20 @@
 
 input {
   margin-right: 5%;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   width: 50%;
+  font-family: 'Croissant One', cursive;
 }
 
 .add-btn {
-  background-color: #0290ff;
+  background-color: hsl(330, 100%, 50%);
   border-radius: 3px;
   border: 1px solid #0b0e07;
   cursor: pointer;
   color: white;
   padding: 9px 23px;
+  font-family: 'Croissant One', cursive;
+  font-size: 1.2rem;
 }
 
 .add-btn:hover {
