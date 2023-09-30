@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&display=swap');
+
 .logo {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Mooli', sans-serif;
   font-size: 1.875rem;
-  font-weight: 700;
+  font-weight: 600;
   color: hsl(281, 74%, 60%);
 }
 
@@ -24,11 +26,12 @@
 .nav-item {
   margin: 1rem;
   font-size: 1.2rem;
+  font-family: 'Croissant One', cursive;
   color: black;
 }
 
 .activeLink {
-  color: #0290ff;
+  color: hsl(310, 83%, 45%);
   opacity: 1;
   font-weight: 400;
 }
