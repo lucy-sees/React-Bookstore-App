@@ -3,14 +3,14 @@ import { useSelector, useDispatch } from 'react-redux';
 import { MdDeleteOutline } from 'react-icons/md';
 import Book from './Book';
 import Form from './Form';
-import { removeBook } from '../redux/books/bookSlice';
+import { removeBookAsync } from '../redux/books/api';
 
 const Home = () => {
   const dispatch = useDispatch();
   const bookNames = useSelector((state) => state.books);
 
   const handleRemoveBook = (bookId) => {
-    dispatch(removeBook(bookId));
+    dispatch(removeBookAsync(bookId));
   };
 
   return (
@@ -18,10 +18,14 @@ const Home = () => {
       <section className="book-list">
         <Form />
         {bookNames.map((book) => (
-          <article className="one-book" key={book.id}>
+          <article className="one-book" key={book.item_id}>
             <Book title={book.title} author={book.author} />
 
-            <button type="button" className="not-visible" onClick={() => handleRemoveBook(book.id)}>
+            <button
+              type="button"
+              className="not-visible"
+              onClick={() => handleRemoveBook(book.item_id)}
+            >
               <MdDeleteOutline className="book-delete-btn" />
             </button>
           </article>
