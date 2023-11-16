@@ -11,7 +11,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Todo App ](#-todo-app-)
+- [📖 React Bookstore App ](#-react-bookstore-app-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -116,7 +116,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Deploy on GitHub**
+- [ ] **Fetch more books using API**
 - [ ] **Responsive design**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
